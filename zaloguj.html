@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Zaloguj</title>
+
+	<meta name="description" content="opis w celu pozycjonowani strony" />
+	<meta name="keywords" content="słowa kluczowe związane ze stroną" />
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+	<script src="functions.js" async></script>
+</head>
+<body>
+<div class='topbar'>
+	<button onclick="stronaRejestracja()">Rejestracja</button>
+</div>
+
+<h2>ZALOGUJ</h2>
+
+<div id='panel'>
+	<form>
+		<br>
+		<label for="username">Nazwa użytkownika:</label><br>
+			<input type="text" id="user" name="username">
+		<br></br>
+		<label for="password">Hasło:</label><br>
+			<input type="password" id="password" name="password">
+		<br></br>
+		<input onclick="login()" id='zaloguj' type="button" value="Zaloguj">
+		<p id='result'></p>
+	</form>
+</div>
+
+</body>
+</html>

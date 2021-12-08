@@ -1,0 +1,179 @@
+body{
+  height: auto;
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+button{
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+button:hover{
+  cursor: pointer;
+  color: purple;
+  background-color: silver;
+}
+
+button.buttonZalogowany{
+  border-radius: 20px;
+  padding: 5px;
+  margin-right: 5px;
+  font-size: 20px;
+  float: right;
+  margin-top: 25px;
+}
+
+button.buttonZalogowany:hover{
+  cursor: pointer;
+  color: purple;
+  background-color: silver;
+}
+
+.text{
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+  font-size: 30px;
+  color: silver;
+  text-align: center;
+  text-shadow: 5px 5px 20px silver;
+}
+
+h2{
+  font-size: 60px;
+  color: silver;
+  text-align: center;
+  text-shadow: 5px 5px 20px silver;
+}
+
+input#username{
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+input#password{
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+input#zaloguj{
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+input#zaloguj:hover{
+  cursor: pointer;
+  background-color: silver;
+  color: purple;
+}
+
+input#zarejestruj{
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+input#zarejestruj:hover{
+  cursor: pointer;
+  background-color: silver;
+  color: purple;
+}
+
+span#nazwaUsera{
+  color:silver;
+  font-size: 25px;
+  float: right;
+  margin-top: 25px;
+}
+
+img{
+  width: 30vw;
+  height: 20vw;
+  border-radius: 5px;
+  text-align: center;
+}
+
+div.logo{
+  text-align: center;
+}
+
+.image{
+  display: grid;
+  justify-content: center;
+  grid-template-columns:repeat(3, 31%);
+  color: silver;
+  margin: 0 auto;
+}
+
+.desc{
+  text-align: center;
+  padding: 5px;
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 768px){
+  .image{
+    grid-template-columns:repeat(1, 40vw);
+  }
+  img{
+    width: 40vw;
+    height: 200px;
+    border-radius: 5px;
+  }
+  .desc{
+    width: 100%;
+  }
+}
+
+.header{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topbar{
+  width: auto;
+  background-color: #330033;
+  border-radius: 20px;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: row;
+}
+
+.topBarUser{
+  margin-right: 80px;
+  opacity: 0.7;
+  padding: 5px;
+}
+
+#panelRejestracja{
+  background:-webkit-gradient(linear, 99% 100%, 10% 21%, from(#8D817F), to(#2B1328));
+  color:silver;
+  border-radius: 15px;
+  text-align: center;
+  width: 500px;
+  height: 570px;
+  margin: 0 auto;
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#panel{
+  background:-webkit-gradient(linear, 99% 100%, 10% 21%, from(#8D817F), to(#2B1328));
+  color:silver;
+  border-radius: 15px;
+  text-align: center;
+  width: 500px;
+  height: 350px;
+  margin: 0 auto;
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
