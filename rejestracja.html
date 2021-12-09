@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Rejestracja</title>
+
+	<meta name="description" content="opis w celu pozycjonowani strony" />
+	<meta name="keywords" content="słowa kluczowe związane ze stroną" />
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+	<script src="functions.js" async></script>
+</head>
+<body>
+<div class='topbar'>
+	<button onclick="stronaZaloguj(),storage()">Logowanie</button>
+</div>
+
+<h2>REJESTRACJA</h2>
+
+<div id='panelRejestracja'>
+	<form>
+		<br>
+		<label for="username">Nazwa użytkownika:</label><br>
+			<input type="text" id="username" name="username">
+		<br></br>
+		<label for="password">Hasło:</label><br>
+			<input type="password" id="pass" name="password">
+		<br></br>
+		<label for="email">Email:</label><br>
+			<input type="email" id="email" name="email">
+		<br></br>
+		<label for="emailRepeat">Potwierdź Email:</label><br>
+			<input type="email" id="emailRepeat" name="emailRepeat">
+		<br></br>
+		<a href='#result'><input onclick="rejestracja()" id='zarejestruj' type="button" value="Zarejestruj"></input></a>
+		<p id='result'></p>
+	</form>
+</div>
+
+</body>
+</html>
