@@ -136,3 +136,24 @@ function main(){
   }
 }
 main();
+
+window.onscroll = function(){
+
+  let img = document.getElementById("img");
+  let scroll = window.pageYOffset;
+  let userDiv = document.getElementById("header");
+  console.log(scroll);
+
+  if(scroll>0){
+    img.style.opacity = "10";
+    img.style.color = "white";
+    img.style.marginTop = "0%";
+    userDiv.style.opacity = "0";
+  }
+  else{
+    img.style.marginTop = "50%";
+    img.style.opacity = "0";
+    img.style.color = "black";
+    userDiv.style.opacity = "10";
+  }
+}
