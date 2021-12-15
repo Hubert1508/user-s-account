@@ -116,10 +116,10 @@ div.logo{
 
 @media only screen and (max-width: 768px){
   .image{
-    grid-template-columns:repeat(1, 40vw);
+    grid-template-columns:repeat(1, 70vw);
   }
   img{
-    width: 40vw;
+    width: 70vw;
     height: 200px;
     border-radius: 5px;
   }
@@ -176,4 +176,15 @@ div.logo{
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+#img{
+  margin-top: 50%;
+  opacity: 0;
+  color: black;
+  transition: 1s;
+}
+
+#header{
+  transition: 0.8s;
 }
